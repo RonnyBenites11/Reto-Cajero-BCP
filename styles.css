@@ -1,0 +1,461 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: 800px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    box-sizing: border-box; /* Espacio entre los divs */
+}
+.container1{
+    width: 1500px;
+    height: 800px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.box {
+    width: 1500px;
+    height: 800px;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    flex-direction: column; /* Alinea los elementos de la segunda caja en columna */
+    justify-content: center;
+    align-items: center;
+
+}
+.datos1 {
+    margin-bottom: 15px;
+    width: 45%; 
+    color: var(--text, #202e44);
+    border: 1px solid var(--onsurface-600, #868f9e);
+    border-radius: 8px;
+    box-shadow: none;
+    font-family: Flexo-Demi, helvetica, arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 65px;
+    padding: 11px 15px;
+    outline: 0;
+    caret-color: var(--text, #202e44);
+    transition:  all .2s ease-in-out;/* Asegura que los inputs llenen el ancho disponible */
+}
+
+.datos1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.datos1 input {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.divstyle {
+    background-image: url("./img/persona.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    
+}
+.header {
+    margin-bottom: 30px;
+    margin-top: -500px;
+    width: 800px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.header h2 {
+    font-size: 24px;
+    
+}
+
+.operations {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.operation {
+    width: 30%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
+}
+.icon{
+    width: 110px;
+    height: 130px;
+}
+
+.left {
+    background-color: #ffffff;
+    color: #101751;
+    width: 300px;
+    margin-left: -800px;
+    height: 310px
+}
+
+
+.right-container {
+    margin-right: 180px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.operation.right {
+    width: 300px;
+    height: 150px;
+    background-color: #ff7e2f;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom:1px; /* Espacio entre las cajas */
+}
+
+.operation.right:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior en el último elemento */
+}
+
+.operation p {
+    font-size: 30px;
+    margin: 0;
+}
+
+.logout {
+    text-align: right;
+    margin-top: -700px;
+    margin-left:450px;
+    margin-right: 10px;
+    
+}
+
+.logout button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    
+}
+.login{
+    display: block;
+}
+
+
+.consulta{
+    background-color: #101751;
+  
+    
+    
+    text-align: center;
+    color: white;
+}
+.saldo{
+    background-image: url("https://www.viabcp.com/wcm/connect/6da7c4f3-6562-4e8a-9388-789fb51604fe/Comp_1+%281%29.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-6da7c4f3-6562-4e8a-9388-789fb51604fe-oS5yyMC");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 0;
+    font-weight: 700;
+}
+
+.volver-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.volver-btn:hover {
+    background-color: #ccc;
+}
+
+/* Available Bills */
+.bills-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+.available-bills {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.available-bills h2 {
+    color: #555;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.bills span {
+    margin: 0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #005BBB;
+}
+
+/* Time Information */
+.time-info {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    justify-content: center; /* Alinea horizontalmente la imagen y el texto en el centro */
+    color: #00A859;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    width: 400px;
+    height: 40px;
+}
+
+.time-info img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    width: 60px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.time-info span {
+    line-height: 1.5; /* Ajusta la altura de línea para el texto */
+}
+
+/* Input Section */
+.input-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.input-section input {
+    width: 80%;
+    padding: 12px;
+    font-size: 1.2em;
+    text-align: center;
+    border: 2px solid #005BBB;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-section input:focus {
+    border-color: #003f7d;
+}
+
+/* Quick Amounts */
+.monto-container {
+    display: flex;
+    align-items: center;
+  
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    
+    gap: 10px;
+    flex: 1;
+}
+
+.input-section label {
+    font-size: 0.9em;
+    color: #333;
+    margin-left: -250px;
+}
+
+.input-section input {
+    width: 50%;
+    height: 60px;
+
+    padding: 10px;
+    font-size: 35px;
+    border: 2px solid #1215e6;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.confirm-section {
+    margin-top: 20px;
+    margin-left: -280px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.confirm-btn {
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    width: 320px;
+    height: 50px;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #e65c00;
+}
+
+.quick-amounts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    flex: 1;
+}
+
+.quick-amounts button {
+    background-color: #1215e6;
+    color: white;
+    border: none;
+    height: 130px;
+    width: 200px;
+    padding: 20px 0;
+    border-radius: 8px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.quick-amounts button:hover {
+    background-color: #004599;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    border: 2px solid rgba(139, 139, 139, 0.432);
+    border-radius: 8px;
+    width: 800px;
+    height: 130px;
+    
+   
+   
+   
+    margin: 40px auto;
+}
+
+.account-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.account-info span {
+    font-size: 18px;
+    color: #333;
+}
+
+.balance-info {
+    display: flex;
+    align-items: center;
+}
+
+.balance-info span {
+    font-size: 18px;
+    color: #333;
+    margin-right: 40px;
+}
+
+.view-balance-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 40px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-balance-btn:hover {
+    background-color: #eee;
+}
+
+.view-balance-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ccc;
+}

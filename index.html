@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login" id="loginPrincipal">
+            <div class="container">
+            <div class="box divstyle"></div>
+            <div class="box"> 
+                
+            <div class="datos1">
+            <label>Ingresa tu número de DNI</label>
+            <input type="password"  placeholder="8 números" id="usuario">
+            </div>
+            <div class="datos1">
+            <label>Ingresa tu clave </label>
+            <input type="password" placeholder="Contraseña" id="contrasena">
+            </div>
+            <span>para empezar tu sesión</span>
+
+            <div>
+                <button class="confirm-btn" onclick="iniciarSesion()">Continuar</button>
+            </div>
+
+            </div>
+            </div>
+    </div>
+    <div id="menu" style="display: none;" class="operaciones">
+        <div class="container consulta" >
+            <div class="header">
+                <p>Bienvenido <span id="nombreCuenta"></span></p>
+                <h2>¿Qué operación quieres hacer hoy?</h2>
+            </div>
+            <div class="operations">
+                <button class="operation left" onclick="retirarMonto()">
+                    <div > <img class="icon" src="./img/retiroimg.png"> </div>
+                    <p>Retirar efectivo</p>
+                </button>
+                <div class="right-container">
+                <button class="operation right" onclick="ingresarMonto()">
+                    <p>Depositar efectivo</p>
+                </button>
+                <button class="operation right" onclick="consultarSaldo()">
+                    <p>Consultar Saldo</p>
+                </button>
+                </div>
+            </div>
+           
+            <div class="logout">
+                <button onclick="cerrarSesion()">Salir</button>
+            </div>
+        </div>
+    </div>
+    <div class="verdato" style="display: none;" id="resultado1" >
+        <div class="container">
+                <div class="box saldo"></div>
+                
+                <div class="box" id="resultado"> 
+                   
+                </div>
+                <div class="header-right">
+                    <button class="volver-btn" onclick="regresarOpraciones()" >Volver</button>
+                </div>
+
+
+        </div>        
+    </div>
+    <div class="retiro" style="display: none;" id="retirar">
+        <div class="container1">
+            <header>
+                <div class="header-left">
+                    <img src="./img/retiroimg.png" alt="Icono Retiro de Efectivo">
+                    <h1>Retiro de efectivo</h1>
+                </div>
+                <div class="header-right">
+                    <button class="volver-btn" onclick="volverAlMenu()">Volver</button>
+                </div>
+            </header>
+            <div class="bills-container">
+                <div class="available-bills">
+                    <h2>Billetes disponibles aquí:</h2>
+                    <div class="bills">
+                        <span>S/ 20</span>
+                        <span>S/ 50</span>
+                        <span>S/ 100</span>
+                        <span>S/ 200</span>
+                    </div>
+                </div>
+                <div class="time-info">
+                    <img src="./img/relojbcp.png" alt="Reloj">
+                    <span>De 6 am a 10 pm hasta S/ 3,000</span><br>
+                    <span style="color: rgba(70, 70, 70, 0.815);">De 10 pm a 6 am hasta S/ 500</span>
+                </div>
+            </div>
+            <div class="monto-container">
+                <div class="input-section">
+                    <label for="monto">Ingresar monto</label>
+                    <input type="text" id="monto" value="S/ 220">
+                    <div class="confirm-section">
+                        <button class="confirm-btn" onclick="confirmarRetiro()">Confirmar</button>
+                    </div>
+                </div>
+                <div class="quick-amounts">
+                    <button onclick="seleccionarMonto(20)">S/ 20</button>
+                    <button onclick="seleccionarMonto(50)">S/ 50</button>
+                    <button onclick="seleccionarMonto(100)">S/ 100</button>
+                    <button onclick="seleccionarMonto(200)">S/ 200</button>
+                </div>
+            </div>
+        </div>
+   
+                <footer>
+                    <div class="account-info">
+                        <span>Cuenta: <br>Ahorros Soles S/</span>
+                        <div class="balance-info">
+                            <span>Saldo disponible: <br> <span id="versaldo"> ***** </span></span>
+                            <button class="view-balance-btn"  onclick="verSaldo()" >Ver saldo</button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+    </div>
+   
+<script src="script.js"></script>
+</body>
+</html>
